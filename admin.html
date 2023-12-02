@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Admin Page</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+ <div class="container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton">Search</button>
+
+    <div class="mb-3">
+      <button class="btn btn-success" id="addNewUser">Add New User</button>
+    </div>
+
+    <table id="userTable" class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+     
+      </tbody>
+    </table>
+
+    <div id="pagination">
+    
+    </div>
+ </div>
+
+ <script src="admin.js"></script>
+</body>
+</html>
